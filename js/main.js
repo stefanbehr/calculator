@@ -15,24 +15,24 @@ $(document).ready(function() {
 	$("#operators .operator").click(function() {
 		if (operand != '') {
 			operands.push(operand);
+			operand = '';
+			
+			var operator = $(this).text();
+			
+			if (operator != "=") {
+				operators.push(operator);
+			} else {
+				operators.reverse();
+				operands.reverse();
+				expression = '';
+				while (operators.length != 0) {
+					expression += operands.pop() + operators.pop();
+				}
+				expression += operands.pop();
+				$("#display").text(eval(expression).toString());
+				operands = [];
+				operators = [];
+			}			
 		}
-		operand = '';
-		
-		var operator = $(this).text();
-		
-		if (operator != "=") {
-			operators.push(operator);
-		} else {
-			operators.reverse();
-			operands.reverse();
-			expression = '';
-			while (operators.length != 0) {
-				expression += operands.pop() + operators.pop();
-			}
-			expression += operands.pop();
-			$("#display").text(eval(expression).toString());
-			operands = [];
-			operators = [];
-		}		
 	});
 });
