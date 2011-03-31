@@ -1,0 +1,61 @@
+body, div, ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 18px;
+	line-height: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#main, #display, #buttons, #buttons > div {
+	width: 500px;
+}
+
+#display, #digits {
+	margin-bottom: 20px;
+}
+
+#display, #operators {
+	height: 100px;
+}
+
+#display {
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+#digits {
+	height: 220px;
+}
+
+#main {
+	background-color: #ccc;
+	height: 460px;
+	padding: 25px;
+	margin: 200px auto;
+	border-radius: 10px;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	padding: 41px 0;
+	width: 92px;
+	height: 18px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: white;
+}
+
+li#zero, li#five, li#add {
+	margin: 0;
+}
+
+li#zero, li#one, li#two, li#three, li#four {
+	margin-bottom: 20px;
+}
