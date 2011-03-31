@@ -2,7 +2,6 @@ $(document).ready(function() {
 	var operand = '';
 	var operands = [];
 	var operators = [];
-	var expression = '';
 	
 	$("#digits .digit").click(function() {
 		var digit = $(this).text();
@@ -24,7 +23,7 @@ $(document).ready(function() {
 			} else {
 				operators.reverse();
 				operands.reverse();
-				expression = '';
+				var expression = '';
 				while (operators.length != 0) {
 					expression += operands.pop() + operators.pop();
 				}
