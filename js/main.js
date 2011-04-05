@@ -34,4 +34,11 @@ $(document).ready(function() {
 			}			
 		}
 	});
+	
+	$("#clear").click(function() {
+		$("#display").text("");
+		operands = [];
+		operators = [];
+		operand = '';
+	});
 });
