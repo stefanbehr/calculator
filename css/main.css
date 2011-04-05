@@ -14,7 +14,7 @@ body {
 	width: 500px;
 }
 
-#display, #digits {
+#display, #digits, #operators {
 	margin-bottom: 20px;
 }
 
@@ -40,13 +40,13 @@ body {
 
 #main {
 	background-color: #eee;
-	height: 460px;
+	height: 580px;
 	padding: 25px;
 	margin: 100px auto;
 	border-radius: 10px;
 }
 
-li {
+li, #clear {
 	list-style: none;
 	display: inline-block;
 	float: left;
@@ -60,7 +60,13 @@ li {
 	border: 1px solid #bbb;
 }
 
-li:hover {
+#clear {
+	width: 498px !important;
+	display: block;
+	margin: 0;
+}
+
+li:hover, #clear:hover {
 	background-color: #ccc;
 }
 
