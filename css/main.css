@@ -32,27 +32,39 @@ body {
 	border-radius: 3px;
 }
 
-#digits {
+#buttons {
+	height: 478px;
+	width: 540px;
 }
 
-li, #clear {
-	list-style: none;
+.button_row {
+	margin-bottom: 10px;
+	height: 112px;
+	width: 540px;
+}
+
+.button {
+	text-align: center;
 	display: inline-block;
 	float: left;
-	text-align: center;
+	list-style: none;
 	background-color: #ddd;
+	margin-left: 10px;
+	padding: 47px 0;
 	border: 1px solid #bbb;
+	height: 18px;
+	width:98px;
+	border-radius: 3px;
+}
+
+.button:first-child {
+	margin: 0;
 }
 
 #clear {
+	width: 538px;
 }
 
-li:hover, #clear:hover {
+.button:hover {
 	background-color: #ccc;
-}
-
-li#zero, li#five, li#add {
-}
-
-li#zero, li#one, li#two, li#three, li#four {
 }
