@@ -1,69 +1,50 @@
 body, div, ul, li {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 body {
-	font-size: 18px;
-	line-height: 18px;
 	font-family: sans-serif;
+	font-size: 18px;
 	font-weight: bold;
+	line-height: 18px;
 }
 
-#main, #buttons, #buttons > div {
-	width: 500px;
-}
-
-#display, #digits, #operators {
-	margin-bottom: 20px;
-}
-
-#operators {
-	height: 100px;
+#calculator {
+	background-color: #eee;
+	margin: 100px auto;
+	padding: 20px;
+	height: 600px;
+	width: 540px;
+	border-radius: 3px;
 }
 
 #display {
-	background-color: #fff;
-	border-radius: 4px;
-	border: 1px solid #ddd;
-	width: 436px;
-	height: 36px;
 	text-align: right;
-	line-height: 36px;
 	font-size: 36px;
-	padding: 31px;
+	line-height: 36px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 37px;
+	border: 1px solid #ddd;
+	height: 36px;
+	width: 464px;
+	border-radius: 3px;
 }
 
 #digits {
-	height: 220px;
-}
-
-#main {
-	background-color: #eee;
-	height: 580px;
-	padding: 25px;
-	margin: 100px auto;
-	border-radius: 10px;
 }
 
 li, #clear {
 	list-style: none;
 	display: inline-block;
 	float: left;
-	margin-left: 10px;
-	padding: 40px 0;
-	width: 90px;
-	height: 18px;
 	text-align: center;
-	border-radius: 4px;
 	background-color: #ddd;
 	border: 1px solid #bbb;
 }
 
 #clear {
-	width: 498px !important;
-	display: block;
-	margin: 0;
 }
 
 li:hover, #clear:hover {
@@ -71,9 +52,7 @@ li:hover, #clear:hover {
 }
 
 li#zero, li#five, li#add {
-	margin: 0;
 }
 
 li#zero, li#one, li#two, li#three, li#four {
-	margin-bottom: 20px;
 }

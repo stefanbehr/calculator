@@ -7,47 +7,45 @@
 
 	<title>calculator</title>
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-
-	<div id="main">
-		<div id="calculator">
-			<div id="display">
+	<div id="calculator">
+		<div id="display">
+		</div>
+		<div id="buttons">
+			<div id="digits">
+				<ul>
+					<li id="zero" class="digit button">0</li>
+					<li id="one" class="digit button">1</li>
+					<li id="two" class="digit button">2</li>
+					<li id="three" class="digit button">3</li>
+					<li id="four" class="digit button">4</li>
+					<li id="five" class="digit button">5</li>
+					<li id="six" class="digit button">6</li>
+					<li id="seven" class="digit button">7</li>
+					<li id="eight" class="digit button">8</li>
+					<li id="nine" class="digit button">9</li>
+				</ul>
 			</div>
-			<div id="buttons">
-				<div id="digits">
-					<ul>
-						<li id="zero" class="digit">0</li>
-						<li id="one" class="digit">1</li>
-						<li id="two" class="digit">2</li>
-						<li id="three" class="digit">3</li>
-						<li id="four" class="digit">4</li>
-						<li id="five" class="digit">5</li>
-						<li id="six" class="digit">6</li>
-						<li id="seven" class="digit">7</li>
-						<li id="eight" class="digit">8</li>
-						<li id="nine" class="digit">9</li>
-					</ul>
-				</div>
-				<div id="operators">
-					<ul>
-						<li id="add" class="operator">+</li>
-						<li id="sub" class="operator">-</li>
-						<li id="mul" class="operator">*</li>
-						<li id="div" class="operator">/</li>
-						<li id="eq" class="operator">=</li>
-					</ul>
-				</div>
-				<div id="clear">
-					C
-				</div>
+			<div id="operators">
+				<ul>
+					<li id="add" class="operator button">+</li>
+					<li id="sub" class="operator button">-</li>
+					<li id="mul" class="operator button">*</li>
+					<li id="div" class="operator button">/</li>
+					<li id="eq" class="operator button">=</li>
+				</ul>
+			</div>
+			<div id="function_buttons">
+				<ul>
+					<li id="clear" class="function button">C</li>
+				</ul>				
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
