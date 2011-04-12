@@ -1,0 +1,3 @@
+* Try to figure out how to dynamically alter the limit on operand final length depending on current operand length (e.g., operand consists of 23 ones, and you could probably fit a non-one digit in at the end without overflowing the div, whereas any operand consisting of all non-one digits can only be a max of 23 digits long before overflowing the div).
+* Figure out how to get operation output to save for possible input at beginning of next operation (e.g. 2+6=8, +2=10).
+* Modify output so that it fits in the display? It's kind of already doing that with exponential notation output, though...

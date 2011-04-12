@@ -5,7 +5,7 @@ $(document).ready(function() {
 	
 	$(".digits .digit").click(function() {
 		var digit = $(this).text();
-		if (operand.length < 21 && (operand != '' || digit != "0")) {
+		if (operand.length < 23 && operand != '0') {
 			operand += digit;
 		}
 		$("#display").text(operand);
