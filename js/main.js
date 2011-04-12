@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var operands = [];
 	var operators = [];
 	
-	$("#digits .digit").click(function() {
+	$(".digits .digit").click(function() {
 		var digit = $(this).text();
 		if (operand.length < 21 && (operand != '' || digit != "0")) {
 			operand += digit;
