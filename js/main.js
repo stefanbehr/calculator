@@ -28,8 +28,9 @@ $(document).ready(function() {
 					expression += operands.pop() + operators.pop();
 				}
 				expression += operands.pop();
-				$("#display").text(eval(expression).toString());
-				operands = [];
+				result = eval(expression).toString();
+				$("#display").text(result);
+				operand = result;
 				operators = [];
 			}			
 		}
