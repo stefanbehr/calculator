@@ -2,8 +2,13 @@ $(document).ready(function() {
 	var operand = '';
 	var operands = [];
 	var operators = [];
+	var resultOperandFlag = false;
 	
 	$(".digits .digit").click(function() {
+		if (resultOperandFlag) {
+			operand = '';
+			resultOperandFlag = false;
+		}
 		var digit = $(this).text();
 		if (operand.length < 23 && operand != '0') {
 			operand += digit;
@@ -15,6 +20,7 @@ $(document).ready(function() {
 		if (operand != '') {
 			operands.push(operand);
 			operand = '';
+			resultOperandFlag = false;
 			
 			var operator = $(this).text();
 			
@@ -31,7 +37,7 @@ $(document).ready(function() {
 				result = eval(expression).toString();
 				$("#display").text(result);
 				operand = result;
-				operators = [];
+				resultOperandFlag = true;
 			}			
 		}
 	});
