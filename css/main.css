@@ -1,70 +1,70 @@
 body, div, ul, li {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-family: sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 18px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
 }
 
 #calculator {
-	background-color: #eee;
-	margin: 100px auto;
-	padding: 20px;
-	height: 600px;
-	width: 540px;
-	border-radius: 3px;
+    background-color: #eee;
+    margin: 100px auto;
+    padding: 20px;
+    height: 600px;
+    width: 540px;
+    border-radius: 3px;
 }
 
 #display {
-	text-align: right;
-	font-size: 36px;
-	line-height: 36px;
-	background-color: #fff;
-	margin-bottom: 10px;
-	padding: 37px;
-	border: 1px solid #ddd;
-	height: 36px;
-	width: 464px;
-	border-radius: 3px;
+    text-align: right;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 37px;
+    border: 1px solid #ddd;
+    height: 36px;
+    width: 464px;
+    border-radius: 3px;
 }
 
 #buttons {
-	height: 478px;
-	width: 540px;
+    height: 478px;
+    width: 540px;
 }
 
 .button_row {
-	margin-bottom: 10px;
-	height: 112px;
-	width: 540px;
+    margin-bottom: 10px;
+    height: 112px;
+    width: 540px;
 }
 
 .button {
-	text-align: center;
-	display: inline-block;
-	float: left;
-	list-style: none;
-	background-color: #ddd;
-	margin-left: 10px;
-	padding: 47px 0;
-	border: 1px solid #bbb;
-	height: 18px;
-	width:98px;
-	border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    background-color: #ddd;
+    margin-left: 10px;
+    padding: 47px 0;
+    border: 1px solid #bbb;
+    height: 18px;
+    width:98px;
+    border-radius: 3px;
 }
 
 .button:first-child {
-	margin: 0;
+    margin: 0;
 }
 
 #clear {
-	width: 538px;
+    width: 538px;
 }
 
 .button:hover {
-	background-color: #ccc;
+    background-color: #ccc;
 }
